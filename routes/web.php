@@ -19,7 +19,7 @@ use App\Http\Controllers\ArticleController;
 
 Auth::routes();
 
-// Home - con lista articoli
+// Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Articolo singolo
@@ -27,3 +27,6 @@ Route::get('/article/{title}', [ArticleController::class, 'show'])->name('articl
 
 // Contatti
 Route::get('/contatti', [HomeController::class, 'contacts'])->name('contacts');
+
+// Blog - con lista articoli
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
