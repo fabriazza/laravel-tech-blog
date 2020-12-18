@@ -21,6 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+     // funzione che ritorna la home page
     public function index(){
 
         $articles = [
@@ -59,10 +61,16 @@ class HomeController extends Controller
         return view('home', ['articles' => $articles]);
     }
 
+// funzione che ritorna la pagina contatti
     public function contacts(){
         return view('contacts');
     }
 
+// funzione che ritorna la pagina chi siamo
+    public function aboutus(){
+        return view('aboutus');
+    }
+// funzione che ritorna la pagina del blog
     public function blog(){
 
         $articles = [

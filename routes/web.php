@@ -30,3 +30,6 @@ Route::get('/contatti', [HomeController::class, 'contacts'])->name('contacts');
 
 // Blog - con lista articoli
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+
+// Pagina About us
+Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');

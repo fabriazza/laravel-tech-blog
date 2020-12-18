@@ -14,6 +14,9 @@
                     <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('aboutus') }}">Chi Siamo</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
                 </li>
             </ul>
