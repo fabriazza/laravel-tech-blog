@@ -11035,3 +11035,9 @@ a.text-dark:focus {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .carousel-inner {
+    height: 60vh;
+  }
+}
+

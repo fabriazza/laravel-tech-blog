@@ -32,7 +32,7 @@
         </main>
 
     </div>
-
+ 
     <x-foot />
 </body>
 </html>
