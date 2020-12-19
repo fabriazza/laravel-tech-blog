@@ -10903,6 +10903,64 @@ a.text-dark:focus {
   }
 }
 
+:root {
+  --main-color: #f86425;
+  --second-color: #fb8c00;
+  --color-accent: #273293;
+  --color-soft: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  background-color: var(--second-color);
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-soft {
+  color: var(--color-soft);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-second {
+  background-color: var(--second-color);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-soft {
+  background-color: var(--color-soft);
+}
+
 .fh5co-bg {
   background-size: cover;
   background-position: center center;

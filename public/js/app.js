@@ -515,8 +515,13 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/Fabrizio/wa/blog_vittorio-simone-fabrizio/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/Fabrizio/wa/blog_vittorio-simone-fabrizio/resources/sass/app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\Users\Utente\wa\laravel\blog_vittorio-simone-fabrizio\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Utente\wa\laravel\blog_vittorio-simone-fabrizio\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> b9463dee89f32b822df04b8ebef170672374dbb3
 
 
 /***/ })
