@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- Carosello --}}
 <div id="caroselloHome" class="carousel slide " data-ride="carousel">
     <ol class="carousel-indicators d-none d-md-flex">
       <li data-target="#caroselloHome" data-slide-to="0" class="active"></li>
@@ -27,13 +28,4 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
-  <div class="container-fluid">
-    <div class="row align">
-        <div class="col-12 col-md-6">
-            <h1>Ciao questo è un blog Tech</h1>
-        </div>
-    </div>
-</div>
-
 @endsection

@@ -11041,3 +11041,8 @@ a.text-dark:focus {
   }
 }
 
+.bg-articles-home {
+  background: rgba(224, 224, 224, 0.5);
+  border-radius: 10px;
+}
+
