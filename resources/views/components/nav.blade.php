@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="/img/logo.png" width="50%">
@@ -11,13 +11,16 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
+                    <a class="nav-link menu-pages-item {{ Route::is('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('aboutus') }}">Chi Siamo</a>
+                    <a class="nav-link menu-pages-item {{ Route::is('blog') ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
+                    <a class="nav-link menu-pages-item {{ Route::is('aboutus') ? 'active' : '' }}" href="{{ route('aboutus') }}">Chi siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-pages-item {{ Route::is('contacts') ? 'active' : '' }}" href="{{ route('contacts') }}">Contatti</a>
                 </li>
             </ul>
 
@@ -27,13 +30,13 @@
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                            <a class="nav-link btn btn-accent my-3" href="{{ route('login') }}"><i class="fas fa-user"></i>Login</a>
                         </li>
                     @endif
 
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">Registrati</a>
+                            <a class="nav-link btn btn-accent secondary my-3 ml-0 ml-md-3" href="{{ route('register') }}"><i class="fas fa-user-plus"></i>Registrati</a>
                         </li>
                     @endif
                 @else

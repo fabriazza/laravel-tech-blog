@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-5">
+<div class="container py-5 mt-5">
     <div class="row">
         <!-- Section Titile -->
         <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">

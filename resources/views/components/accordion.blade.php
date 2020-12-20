@@ -1,7 +1,7 @@
 <div class="container mt-5">
     <div class="row">
     <div class="col-12  ">
-      <h2>Top 3 Curiosità del mese nel mondo Tech</h2>
+      <h2 class="text-center">Top 3 Curiosità del mese nel mondo Tech</h2>
     </div>
     <div class="col-12">
     <div id="accordion">

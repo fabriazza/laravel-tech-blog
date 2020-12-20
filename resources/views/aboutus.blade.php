@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-
-
-<div class="container marketing">
-<h1 class="text-accent">Chi Siamo</h1>
+<div class="container marketing mt-5 pt-4">
+  <h1 class="text-accent">Chi Siamo</h1>
 
     <!-- riga iniziale -->
 

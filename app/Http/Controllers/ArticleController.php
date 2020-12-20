@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller {
     public function show($title) {
 
+        $title = urldecode($title);
+
         $articles = collect([
             [
                 'title' => "iPhone 13: finalmente gli OLED Pro Motion?",
@@ -24,7 +26,7 @@ class ArticleController extends Controller {
                 'img' => "/img/digital-signage.png"
             ],
             [
-                'title' => "Aruba instant on: il caso hard & soft house",
+                'title' => "Aruba instant on: il caso hard soft house",
                 'description' => "Aruba Instant On è una soluzione HPE che consente alle piccole e medie imprese, ma anche ai privati cittadini, di ottenere una maggiore flessibilità per l’accesso alla rete ed evitare di eseguire ulteriori passaggi.",
                 'img' => "/img/hard-soft.png"
             ],

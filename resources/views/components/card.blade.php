@@ -4,7 +4,7 @@
         <div class="card-body">
           <h5 class="card-title">{{$title}}</h5>
           <p class="card-text">{{$description}}</p>
-          <a href="{{ route('article.show', ['title' => $title]) }}" class="btn btn-primary">Leggi di più</a>
+          <a href="{{ route('article.show', ['title' => urlencode($title)]) }}" class="btn btn-primary">Leggi di più</a>
         </div>
       </div>
 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container my-5 pt-5">
     <div class="row justify-content-center">
         @foreach ($articles as $el)
             <x-singlearticle

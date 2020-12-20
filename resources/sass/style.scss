@@ -1,55 +1,108 @@
-:root{
-  --main-color:#f86425;
-  --second-color:#fb8c00;
-  --color-accent:#273293;
-  --color-soft:#f7f7f7;
-}
+$main-color:#f86425;
+$second-color:#fb8c00;
+$color-accent:#21364d;
+$color-soft:#f7f7f7;
+$accent-gradient: linear-gradient(180deg, rgba(41,45,78,1) 0%, rgba(63,108,129,1) 41%, rgba(159,199,207,1) 100%);
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-  font-family: 'Poppins', sans-serif;
-}
+// h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+//   font-family: 'Poppins', sans-serif;
+// }
 
 
 hr{
-background-color: var(--second-color);  
+  background-color: $second-color;  
 }
 
-
-
 .text-main{
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .text-second{
-  color: var(--second-color);
+  color: $second-color;
 }
 
 .text-accent{
-  color: var(--color-accent);
+  color: $color-accent;
 }
 
 .text-soft{
-  color: var(--color-soft);
+  color: $color-soft;
 }
 
 .bg-main{
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .bg-second{
-  background-color: var(--second-color);
+  background-color: $second-color;
 }
 
 .bg-accent{
-  background-color: var(--color-accent);
+  background-color: $color-accent;
+}
+
+.bg-accent-gradient{
+  background: $accent-gradient;
 }
 
 .bg-soft{
-  background-color: var(--color-soft);
+  background-color: $color-soft;
 }
 
+.btn-accent {
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  background-color: $main-color;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 400ms;
+  
+  &.secondary {
+    background-color: $color-accent;
+  }
 
+}
 
+.btn-accent:hover {
+  -webkit-box-shadow: 0px 5px 14px 0px rgba(249,86,25,0.7);
+  -moz-box-shadow:    0px 5px 14px 0px rgba(249,86,25,0.7);
+  box-shadow:         0px 5px 14px 0px rgba(249,86,25,0.7);
+  color: #ffffff !important;
+
+  &.secondary {
+    -webkit-box-shadow: 0px 5px 14px 0px rgba(33, 54, 77, 0.671);
+    -moz-box-shadow:    0px 5px 14px 0px rgba(33, 54, 77, 0.671);
+    box-shadow:         0px 5px 14px 0px rgba(33, 54, 77, 0.671);
+  }
+
+}
+
+.btn-accent i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #aeb5c2;
+  margin-right: 10px;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.carousel-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: $main-color;
+}
+
+.carousel-caption {
+  font-size: 1.4rem;
+  color: $color-accent;
+}
 
 .fh5co-bg {
   background-size: cover;
@@ -149,7 +202,6 @@ background-color: var(--second-color);
   display: block;
 }
 
-
 .btn-primary {
   background: #F85A16;
   color: #fff;
@@ -169,14 +221,33 @@ background-color: var(--second-color);
   color: #fff;
 }
 
-@media screen and (min-width:768px){
-  .carousel-inner{
-    height: 60vh;
-  }
-}
-
-
 .bg-articles-home{
   background: rgba(224, 224, 224, 0.5);
   border-radius: 10px;
+}
+
+.menu-pages-item {
+  font-size: 1rem;
+  color: $color-accent !important;
+}
+
+.menu-pages-item.active {
+  color: $main-color !important;
+  font-weight: 800;
+}
+
+@media screen and (min-width:768px){
+  // .carousel-inner{
+  //   height: 60vh;
+  // }
+
+  .carousel-caption{
+    top: 220px !important;
+  }
+}
+
+@media screen and (max-width:586px){
+  .carousel-title {
+    font-size: 1.8rem;
+  }
 }
