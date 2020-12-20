@@ -27,13 +27,13 @@ class HomeController extends Controller
 
         $articles = collect([
             [
-                'title' => "iPhone 13: finalmente gli OLED Pro Motion?",
+                'title' => "Apple iPhone 13: finalmente arrivano gli schermi OLED Pro Motion?",
                 'description' => "A bordo di almeno due delle versioni di iPhone 13 ci sarebbe il celebre display OLED Pro Motion – con refresh rate da 120 Hz – che per ora caratterizza solo gli iPad Pro. A corfermarlo sarebbe un nuovo report.",
                 'img' => "/img/iphone13.jpeg",
                 'date' => "2020-03-22"
             ],
             [
-                'title' => "Cashback: cos’è, come funziona e cosa è andato storto",
+                'title' => "Cashback: che cos’è, come funziona e cosa è andato storto",
                 'description' => "È da fine settembre che sentiamo parlare di Cashback e Super Cashback, ma è solo dall’8 dicembre che l’argomento è tornato sulle prime pagine dei quotidiani grazie alla proposta dell’Extra Cashback di Natale.",
                 'img' => "/img/cashback.jpg",
                 'date' => "2020-07-10"
@@ -85,12 +85,12 @@ class HomeController extends Controller
 
         $articles = collect([
             [
-                'title' => "iPhone 13: finalmente gli OLED Pro Motion?",
+                'title' => "Apple iPhone 13: finalmente arrivano gli schermi OLED Pro Motion?",
                 'description' => "A bordo di almeno due delle versioni di iPhone 13 ci sarebbe il celebre display OLED Pro Motion – con refresh rate da 120 Hz – che per ora caratterizza solo gli iPad Pro. A corfermarlo sarebbe un nuovo report.",
                 'img' => "/img/iphone13.jpeg"
             ],
             [
-                'title' => "Cashback: cos’è, come funziona e cosa è andato storto",
+                'title' => "Cashback: che cos’è, come funziona e cosa è andato storto",
                 'description' => "È da fine settembre che sentiamo parlare di Cashback e Super Cashback, ma è solo dall’8 dicembre che l’argomento è tornato sulle prime pagine dei quotidiani grazie alla proposta dell’Extra Cashback di Natale.",
                 'img' => "/img/cashback.jpg"
             ],

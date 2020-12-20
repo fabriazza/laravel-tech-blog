@@ -1,5 +1,5 @@
 <div class="col-12 col-md-4 py-3">
-    <div class="card shadow">
+    <div class="card shadow" data-aos="zoom-in" data-aos-duration="500">
         <img class="card-img-top" src="{{$img}}" alt="">
         <div class="card-body">
           <h5 class="card-title">{{$title}}</h5>

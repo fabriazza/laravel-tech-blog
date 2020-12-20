@@ -3,8 +3,10 @@
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="/img/logo.png" width="50%">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
+        <button id="hamburgerBtn" class="hamburger hamburger--collapse navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">

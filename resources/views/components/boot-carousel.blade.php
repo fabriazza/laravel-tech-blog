@@ -1,4 +1,4 @@
-<div id="caroselloHome" class="carousel slide " data-ride="carousel">
+<div id="caroselloHome" class="carousel slide " data-ride="carousel" data-aos="fade-down" data-aos-duration="500">
     <ol class="carousel-indicators d-none d-md-flex">
         <li data-target="#caroselloHome" data-slide-to="0" class="active"></li>
         <li data-target="#caroselloHome" data-slide-to="1"></li>
