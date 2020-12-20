@@ -4,13 +4,13 @@
 <div class="container py-5 mt-5">
     <div class="row">
         <!-- Section Titile -->
-        <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <div class="col-md-12" data-aos="fade-left" data-aos-duration="700">
             <h1 class="section-title">Vuoi metterti in contatto con noi?</h1>
         </div>
     </div>
     <div class="row">
         <!-- Section Titile -->
-        <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+        <div class="col-md-6 mt-3 contact-widget-section2" data-aos="fade-right" data-aos-duration="500" data-aos-offset="100">
           <p>Compila il nostro modulo online per inviare un’e-mail al nostro team del Servizio clienti.
             Ci impegniamo a rispondere entro 2 giorni lavorativi dalla ricezione dell’e-mail.</p>
 
@@ -32,7 +32,7 @@
           </div>
         </div>
         <!-- contact form -->
-        <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="500" data-aos-offset="100">
             <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
                 <!-- Name -->
                 <div class="form-group label-floating">
@@ -60,7 +60,7 @@
                 </div>
                 <!-- Form Submit -->
                 <div class="form-submit mt-5">
-                    <button class="btn btn-primary" type="submit" id="form-submit">Invia messaggio</button>
+                    <button class="btn btn-accent" type="submit" id="form-submit">Invia messaggio</button>
                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                     <div class="clearfix"></div>
                 </div>

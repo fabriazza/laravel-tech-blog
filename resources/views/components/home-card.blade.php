@@ -1,4 +1,4 @@
-<div class="col-12 col-md-4 py-4">
+<div class="col-12 col-md-4 py-4" data-aos="fade-up">
   <div class="card border-0 shadow rounded">
     <img class="card-img-top" src="{{$img}}" alt="{{$title}}">
     <div class="card-body">
