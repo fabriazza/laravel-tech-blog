@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4 mt-5">
+<x-masthead />
+
+<div class="container py-5 mt-2 mb-2">
     <div class="row justify-content-center">
         <div class="card-group">
             @foreach ($articles as $el)

@@ -10981,6 +10981,14 @@ hr {
   font-size: 1rem;
 }
 
+.text-1-5 {
+  font-size: 1.5rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
 .carousel-title {
   font-size: 3rem;
   font-weight: 800;
@@ -11024,12 +11032,6 @@ hr {
 #fh5co-footer {
   padding: 7em 0;
   clear: both;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-footer {
-    padding: 3em 0;
-  }
 }
 
 #fh5co-footer {
@@ -11139,9 +11141,35 @@ hr {
   font-weight: 800;
 }
 
+.work-w-us {
+  background: url("/img/slider3.jpg") rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.mw-500 {
+  max-width: 500px;
+}
+
+.masthead {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url("/img/masthead.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 768px) {
   .carousel-caption {
     top: 220px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-footer {
+    padding: 3em 0;
   }
 }
 
