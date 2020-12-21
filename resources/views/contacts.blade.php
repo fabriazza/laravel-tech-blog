@@ -33,30 +33,39 @@
         </div>
         <!-- contact form -->
         <div class="col-md-6" data-aos="fade-left" data-aos-duration="500" data-aos-offset="100">
-            <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+            <form class="shake" role="form" method="post" action="{{ route('contact.send') }}" id="contactForm" name="contact-form" data-toggle="validator">
+                @csrf
                 <!-- Name -->
                 <div class="form-group label-floating">
-                  <label class="control-label" for="name">Nome</label>
-                  <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
+                  <label for="">Nome</label>
+                  <input class="form-control" id="name" type="text" name="name" value="{{ old('name') }}">
+                  @error('name')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
                 </div>
                 <!-- email -->
                 <div class="form-group label-floating">
-                  <label class="control-label" for="email">Email</label>
-                  <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                  <div class="help-block with-errors"></div>
+                  <label for="">Email</label>
+                  <input class="form-control" id="email" type="email" name="mail" value="{{ old('mail') }}">
+                  @error('mail')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
                 </div>
                 <!-- Subject -->
                 <div class="form-group label-floating">
-                  <label class="control-label">Oggetto</label>
-                  <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                  <div class="help-block with-errors"></div>
+                  <label>Oggetto</label>
+                  <input class="form-control" id="msg_subject" type="text" name="subject" value="{{ old('subject') }}">
+                  @error('subject')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
                 </div>
                 <!-- Message -->
                 <div class="form-group label-floating">
-                    <label for="message" class="control-label">Messaggio</label>
-                    <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
-                    <div class="help-block with-errors"></div>
+                    <label for="">Messaggio</label>
+                    <textarea class="form-control" rows="3" id="message" type="text" name="message">{{ old('message') }}</textarea>
+                    @error('message')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <!-- Form Submit -->
                 <div class="form-submit mt-5">
