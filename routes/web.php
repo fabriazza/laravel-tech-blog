@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,12 @@ Route::get('/article/{title}', [ArticleController::class, 'show'])->name('articl
 
 // Contatti
 Route::get('/contatti', [HomeController::class, 'contacts'])->name('contacts');
+
+// Invio form contatti
+Route::post('/formcontatti', [ContactController::class, 'sendcontact'])->name('contact.send');
+
+// Redirect Mail inviata con successo
+Route::get('/mailsuccess', [ContactController::class, 'thankyou'])->name('mail.thankyou');
 
 // Blog - con lista articoli
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
