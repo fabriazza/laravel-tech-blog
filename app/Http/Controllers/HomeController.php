@@ -87,7 +87,8 @@ class HomeController extends Controller
             [
                 'title' => "Apple iPhone 13: finalmente arrivano gli schermi OLED Pro Motion?",
                 'description' => "A bordo di almeno due delle versioni di iPhone 13 ci sarebbe il celebre display OLED Pro Motion – con refresh rate da 120 Hz – che per ora caratterizza solo gli iPad Pro. A corfermarlo sarebbe un nuovo report.",
-                'img' => "/img/iphone13.jpeg"
+                'img' => "/img/iphone13.jpeg",
+                "category" => "tech"
             ],
             [
                 'title' => "Cashback: che cos’è, come funziona e cosa è andato storto",
